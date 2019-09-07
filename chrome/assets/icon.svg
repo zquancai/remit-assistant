@@ -1,0 +1,20 @@
+<svg version="1.1" id="svg-editor-canvas" x="0px" y="0px" width="128" height="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" xml:space="preserve">
+
+  <g type="logo" style="transform: translate(25px, 6px);" class="svg-item ng-isolate-scope ng-pristine ng-valid" ng-model="shape" ng-shape="" ng-click="skav($event, shape)">
+    <linearGradient id="SVGID_3_0" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(90)" class="ng-scope">
+      <stop offset="0%" stop-color="#31373c" stop-opacity="1"></stop>
+      <stop offset="100%" stop-color="#4d4d4d" stop-opacity="1"></stop>
+    </linearGradient>
+    <polygon points="29.981,107.334 8.542,107.334 19.377,24.34 45.163,24.34 48.347,0 15.063,0 0,115.164 
+	33.283,115.164 37.881,80.015 33.555,80.015 " ng-click="mouseDown($event,0)" id="PATH_3_0" fill="url(#SVGID_3_0)" class="ng-scope"></polygon>
+    <path d="M40.24,28.95l-6.108,46.453h4.352l6.077-46.453H40.24z M79.028,41.111c-1.038-3.418-2.748-6.357-5.13-8.818
+	c-2.382-2.459-5.399-4.398-9.048-5.82c-3.651-1.422-7.858-2.133-12.623-2.133h-7.064l-0.603,4.61h6.976
+	c1.537,0,2.842,0.597,3.92,1.788c1.075,1.191,1.902,2.822,2.479,4.898c0.576,2.074,0.902,4.534,0.979,7.376
+	c0.076,2.845-0.114,5.919-0.575,9.222c-0.462,3.305-1.095,6.379-1.901,9.222c-0.808,2.845-1.77,5.302-2.882,7.378
+	c-1.116,2.074-2.364,3.688-3.747,4.84c-1.383,1.154-2.844,1.729-4.381,1.729h-6.943l-0.603,4.611h4.55
+	c1.92,0,3.592,0.461,5.014,1.383c1.422,0.923,2.555,2.173,3.4,3.747s1.383,3.457,1.614,5.647c0.23,2.19,0.19,4.554-0.115,7.089
+	l-1.269,9.453h21.441l1.267-9.453c0.614-4.61-0.443-8.683-3.169-12.219c-2.729-3.533-6.859-6.184-12.393-7.953
+	c2.998-0.998,5.744-2.343,8.242-4.035c2.496-1.688,4.668-3.631,6.513-5.82s3.343-4.611,4.495-7.262s1.92-5.436,2.306-8.357
+	C80.314,48.24,80.065,44.531,79.028,41.111z" ng-click="mouseDown($event,1)" id="PATH_3_1" fill="#5e676e" class="ng-scope"></path>
+  </g>
+</svg>
