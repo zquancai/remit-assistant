@@ -2,7 +2,7 @@ import React, { PureComponent, Fragment } from 'react';
 import { connect } from 'react-redux';
 import Section from '../../components/section';
 import BestRemitStep from '../../components/best-remit-step';
-import { getBestRemittance } from '../../utils/counter';
+import { getBestRemittance } from '../../../utils/counter';
 import { Spin, Icon, Tooltip } from 'antd';
 
 import './index.less';

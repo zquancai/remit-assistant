@@ -1,4 +1,4 @@
-import { sendMessageToContentScript } from '../utils/message';
+import { sendMessageToContentScript } from '../../utils/message';
 
 export default {
   namespace: 'currency',

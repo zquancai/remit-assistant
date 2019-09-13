@@ -1,3 +1,7 @@
+import { arrowURLs } from '../../../utils/constants';
+
+window.isInChangcheng = false;
+
 function isInjected(tabId) {
   return chrome.tabs.executeScriptAsync(tabId, {
     code: `var injected = window.changchengRemitInjected;
@@ -22,23 +26,29 @@ function loadScript(name, tabId) {
           code: fetchRes,
           runAt: 'document_end'
         });
-      }
-      );
+      });
   }
 }
 
-// const arrowURLs = ['^https://remit.zgr.sg/*'];
-const arrowURLs = ['^https://www.cnblogs.com/*', 'https://remit.zgr.sg/*'];
+chrome.tabs.onActiveChanged.addListener(tabId => {
+  chrome.tabs.get(tabId, tab => {
+    window.isInChangcheng = !!tab.url.match(arrowURLs.join('|'));
+  });
+});
 
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
-  if (changeInfo.status !== 'loading' || !tab.url.match(arrowURLs.join('|')))
+  if (changeInfo.status !== 'loading' || !tab.url.match(arrowURLs.join('|'))) {
     return;
+  }
+
+  if (tab.url.match(arrowURLs.join('|'))) {
+    window.isInChangcheng = true;
+  }
 
   const result = await isInjected(tabId);
-  console.log(result, '===');
-  if (chrome.runtime.lastError || result[0]) return;
+  if (chrome.runtime.lastError || result[0]) {
+    return;
+  }
 
-  console.log('start inject');
-  const ret = await loadScript('inject', tabId);
-  console.log(ret, '===');
+  await loadScript('inject', tabId);
 });

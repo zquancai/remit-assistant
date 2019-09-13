@@ -18,13 +18,6 @@ document.head.appendChild(temp);
 window.addEventListener('message', ({ data }) => {
   // console.log(data, findRates(data));
   if (data.cmd === 'get-currency-response') {
-    const mockData = [
-      { limit: 0, rangeRate: 5.201 },
-      { limit: 1000, rangeRate: 5.192 },
-      { limit: 3000, rangeRate: 5.181 },
-      { limit: 5000, rangeRate: 5.16 },
-      { limit: 10000, rangeRate: 5.14 }
-    ];
     chrome.runtime.sendMessage({
       cmd: 'get-currency-response',
       // data: mockData
