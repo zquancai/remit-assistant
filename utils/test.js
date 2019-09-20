@@ -1,0 +1,48 @@
+export const mockData = {
+  '9': {
+    currency_id: '9',
+    code: 'MYR',
+    name_english: 'Malaysian Ringgit',
+    name_chinese: '马来西亚令吉',
+    receiver_id_no_status_id: '2',
+    bank_swift_code_status_id: '1',
+    bank_sort_code_status_id: '1',
+    bank_iban_status_id: '1',
+    bank_bsb_status_id: '1',
+    intermediary_bank_name_status_id: '1',
+    intermediary_bank_address_status_id: '1',
+    intermediary_bank_swift_code_status_id: '1',
+    exchange_rates: [{ minimum_range_limit: '0.0000', range_rate: '3.0220' }],
+    has_express_service: false,
+    default_service_fee: '10.00',
+    express_service_fee: null,
+    express_service_transaction_limit: '0.00',
+    express_service_transaction_limit_message: null
+  },
+  '14': {
+    currency_id: '14',
+    code: 'CNY',
+    name_english: 'Chinese Yuan',
+    name_chinese: '人民币',
+    receiver_id_no_status_id: '2',
+    bank_swift_code_status_id: '1',
+    bank_sort_code_status_id: '1',
+    bank_iban_status_id: '1',
+    bank_bsb_status_id: '1',
+    intermediary_bank_name_status_id: '1',
+    intermediary_bank_address_status_id: '1',
+    intermediary_bank_swift_code_status_id: '1',
+    exchange_rates: [
+      { minimum_range_limit: '0.0000', range_rate: '5.202' },
+      { minimum_range_limit: '1000', range_rate: '5.191' },
+      { minimum_range_limit: '3000', range_rate: '5.186' },
+      { minimum_range_limit: '5000', range_rate: '5.16' },
+      { minimum_range_limit: '10000', range_rate: '5.14' },
+    ],
+    has_express_service: false,
+    default_service_fee: '18.00',
+    express_service_fee: null,
+    express_service_transaction_limit: '9900.00',
+    express_service_transaction_limit_message: null
+  }
+};

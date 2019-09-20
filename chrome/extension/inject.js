@@ -1,3 +1,4 @@
+import { mockData } from '../../utils/test';
 const temp = document.createElement('script');
 temp.setAttribute('type', 'text/javascript');
 temp.innerText = `
@@ -20,8 +21,8 @@ window.addEventListener('message', ({ data }) => {
   if (data.cmd === 'get-currency-response') {
     chrome.runtime.sendMessage({
       cmd: 'get-currency-response',
-      // data: mockData
-      data: data.data,
+      data: mockData
+      // data: data.data,
     });
   }
 });
